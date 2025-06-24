@@ -1,0 +1,99 @@
+* { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f4f8;
+    }
+    main {
+      max-width: 960px;
+      margin: auto;
+      padding: 20px;
+    }
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+    h1, h2, h4 {
+      text-align: center;
+      color: #1a73e8;
+    }
+    .mobil {
+      display: flex;
+      flex-wrap: wrap;
+      background: #f9fafc;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      align-items: center;
+    }
+    .mobil img {
+      max-width: 130px;
+      border-radius: 8px;
+    }
+    .mobil > div {
+      flex: 1;
+      padding-left: 20px;
+    }
+    label {
+      font-weight: 600;
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="text"], input[type="number"], input[type="date"] {
+      padding: 10px;
+      width: 100%;
+      max-width: 300px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-top: 4px;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    button {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 15px;
+      transition: background-color 0.2s;
+      margin: 5px;
+    }
+    button:hover {
+      background-color: #0f5dc2;
+    }
+    #preview-ringkasan p {
+      margin: 6px 0;
+    }
+    .struk {
+      white-space: pre-line;
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 10px;
+      font-family: monospace;
+      margin-top: 20px;
+    }
+    .riwayat-item {
+      background: #eef3fb;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+    @media screen and (max-width: 600px) {
+      .mobil {
+        flex-direction: column;
+        text-align: center;
+      }
+      .mobil img {
+        margin-bottom: 10px;
+      }
+      input, button {
+        width: 100%;
+      }
+    }
