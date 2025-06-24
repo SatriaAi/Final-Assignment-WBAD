@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rental Mobil ABC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <div class="container" id="page-mobil">
+      <h1>Pilih Mobil</h1>
+      <section id="mobil-list"></section>
+      <div style="text-align:center">
+        <button onclick="lanjutKeForm()">Lanjut ke Form Pelanggan</button>
+      </div>
+    </div>
+
+    <div class="container" id="page-form" style="display:none">
+      <h2>Isi Data Pelanggan</h2>
+      <label>Nama Pelanggan:
+        <input type="text" id="nama-pelanggan" placeholder="Masukkan nama Anda">
+      </label>
+      <div id="preview-ringkasan" style="margin-top: 20px;">
+        <h4>Ringkasan Sementara:</h4>
+        <div id="preview-list"></div>
+        <div id="preview-total" style="margin-top:10px;font-weight:bold;"></div>
+      </div>
+      <div style="text-align:center; margin-top: 20px;">
+        <button id="hitung-total">Lihat Ringkasan Pemesanan</button>
+        <button id="simpan-pemesanan">Simpan Pemesanan</button>
+        <button onclick="kembaliKeMobil()" style="background-color:#aaa">Kembali</button>
+      </div>
+      <div id="struk-output" class="struk" style="display:none"></div>
+    </div>
+
+    <div class="container" id="riwayat">
+      <h2>Riwayat Pemesanan</h2>
+      <div id="riwayat-list"></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
